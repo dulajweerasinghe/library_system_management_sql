@@ -3,9 +3,20 @@
 ## Overview
 This project is a **Library Management System** implemented using SQL. It includes tables for managing branches, employees, books, and members, along with necessary constraints and relationships.
 
-## Database Schema
-The database consists of the following tables:
+![Project Pipeline](https://github.com/dulajweerasinghe/library_system_management_sql/blob/main/DALLE2~1.WEB)
 
+## Project Structure
+The database consists of the following tables:
+![Project Pipeline](https://github.com/dulajweerasinghe/library_system_management_sql/blob/main/schemas.pgerd.png)
+
+## Objectives
+
+1. **Set up the Library Management System Database**: Create and populate the database with tables for branches, employees, members, books, issued status, and return status.
+2. **CRUD Operations**: Perform Create, Read, Update, and Delete operations on the data.
+3. **CTAS (Create Table As Select)**: Utilize CTAS to create new tables based on query results.
+4. **Advanced SQL Queries**: Develop complex queries to analyze and retrieve specific data.
+
+   
 ### Branch Table
 ```sql
 CREATE TABLE branch (
@@ -77,6 +88,13 @@ SOURCE Project_solutions.sql;
 
 ## SQL Task Questions and Answers
 Below are the SQL queries solving various tasks related to the library management system:
+
+### CRUD Operations
+
+- **Create**: Inserted sample records into the `books` table.
+- **Read**: Retrieved and displayed data from various tables.
+- **Update**: Updated records in the `employees` table.
+- **Delete**: Removed records from the `members` table as needed.
 
 #### Task 1. Create a New Book Record -- "978-1-60129-456-2', 'To Kill a Mockingbird', 'Classic', 6.00, 'yes', 'Harper Lee', 'J.B. Lippincott & Co.')"
 ```sql
@@ -537,12 +555,24 @@ JOIN Table
 GROUP BY 1,2
 
 ```
-## Usage
-Once the database is set up, you can perform the following actions:
-- Insert, update, or delete records in each table.
-- Query book availability.
-- Track employee and member details.
-- Execute pre-defined solutions from `Project_solutions.sql`.
+## Reports
+
+- **Database Schema**: Detailed table structures and relationships.
+- **Data Analysis**: Insights into book categories, employee salaries, member registration trends, and issued books.
+- **Summary Reports**: Aggregated data on high-demand books and employee performance.
+
+## Conclusion
+
+This project demonstrates the application of SQL skills in creating and managing a library management system. It includes database setup, data manipulation, and advanced querying, providing a solid foundation for data management and analysis.
+
+## How to Use
+
+1. **Clone the Repository**: Clone this repository to your local machine.
+```sh
+ [  git clone https://github.com/dulajweerasinghe/library_system_management_sql.git]
+  
+```
+
 
 ## Contribution
 Feel free to fork this repository and submit pull requests for improvements.
